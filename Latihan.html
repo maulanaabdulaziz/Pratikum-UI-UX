@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Diri Sederhana</title>
+  <style>
+    body {
+      background-color: #1e1e2f;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background-color: #2c2c3e;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #00c3ff;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .profile img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00c3ff;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      row-gap: 15px;
+      column-gap: 10px;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #bbbbbb;
+    }
+
+    .value {
+      color: #ffffff;
+    }
+
+    .education {
+      background-color: #3a3a50;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .education ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .education li {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+      .label {
+        margin-bottom: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Data Diri</h1>
+
+    <div class="profile">
+      <img src="img/Aziz.jpg" alt="Foto Profil">
+    </div>
+
+    <div class="info-grid">
+      <div class="label">Nama</div>
+      <div class="value">Maulana Abdul Aziz</div>
+
+      <div class="label">Tanggal Lahir</div>
+      <div class="value">Jakarta, 11 Maret 2006</div>
+
+      <div class="label">Jenis Kelamin</div>
+      <div class="value">Laki-Laki</div>
+
+      <div class="label">Alamat</div>
+      <div class="value">KP. Gaga No. 125, Jakarta Barat</div>
+
+      <div class="label">Telepon</div>
+      <div class="value">0895-2728-3060</div>
+
+      <div class="label">Email</div>
+      <div class="value">maulanabdulaziz322@gmail.com</div>
+
+      <div class="label">Hobi</div>
+      <div class="value">Kuliner & Nonton Film</div>
+    </div>
+
+    <h2>Jenjang Pendidikan</h2>
+    <div class="education">
+      <ul>
+        <li>SDN Semanan 12 Pagi (20013 – 2019)</li>
+        <li>SMP Era Pembangunan 3 (2019 – 2022)</li>
+        <li>SMK Era Pembangunan - Jurusan TKJ (2022 – 2025)</li>
+        <li>Sekolah Tinggi Teknologi Terpadu Nurul Fikri - Teknik Informatika (2025 – Sekarang)</li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>
